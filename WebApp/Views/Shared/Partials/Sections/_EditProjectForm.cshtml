@@ -1,0 +1,24 @@
+﻿@model WebApp.ViewModels.EditProjectViewModel
+
+<div id="editProjectModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Edit Project</h4>
+            <button type="button" class="btn-close" data-close="true"></button>
+        </div>
+
+        <form asp-action="Edit" asp-controller="Projects" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="ProjectName"></label>
+                <input asp-for="ProjectName" />
+                <span asp-validation-for="ProjectName"></span>
+            </div>
+
+            @* Lägg till övriga fält på samma sätt hjälp av chatgpt*@
+
+            <button type="submit" class="btn btn-submit btn-blue">Save</button>
+        </form>
+    </div>
+</div>

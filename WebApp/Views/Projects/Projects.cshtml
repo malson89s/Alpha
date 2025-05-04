@@ -1,0 +1,81 @@
+﻿@{
+	Layout = "_PortalLayout";
+	ViewData["Title"] = "Projects";
+}
+
+
+<section id="projects">
+	<header>
+		<h2>@ViewData["Title"]</h2>
+		<button type="button" class="btn btn-add btn-blue" data-modal="true" data-target="#modal-add-project">Add Project</button>
+	</header>
+    <div class="project-cards">
+        @foreach (var project in Model.Projects)
+        {
+            <div class="card project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <img src="~/images/Icons/project-icon.svg" alt="Project icon" />
+                    </div>
+                    <div>
+                        <h5>@project.Title</h5>
+                        <small>@project.ClientName</small>
+                    </div>
+                    <button class="btn-options">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+
+                <p class="project-description">@project.Description</p>
+
+                <div class="project-footer">
+                    <div class="deadline">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>@(project.Deadline?.ToString("dddd") ?? "No deadline")</span>
+                    </div>
+                    <div class="avatars">
+                        @foreach (var member in project.Members)
+                        {
+                            <img src="@member.ImageUrl" alt="@member.FullName" class="avatar" />
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<div id="modal-add-project" class="modal">
+    <div class="modal-content">
+        <form asp-controller="Admin" asp-action="AddProject" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <h4>Create new project</h4>
+
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input name="Title" class="form-control" placeholder="Enter title" required />
+                <span data-valmsg-for="Title"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <textarea name="Description" class="form-control" placeholder="Enter description"></textarea>
+                <span data-valmsg-for="Description"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Status">Status</label>
+                <select name="Status" class="form-control">
+                    <option value="Started">Started</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+
+            <div class="form-group d-flex justify-content-between mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary" data-close="true">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

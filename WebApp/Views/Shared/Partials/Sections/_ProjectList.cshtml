@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApp.ViewModels.ProjectCardViewModel>
+
+<div class="project-grid">
+    @foreach (var project in Model)
+    {
+        <div class="project-card">
+            <div class="project-avatar">
+                <img src="@project.ImageUrl" alt="@project.ProjectName" />
+            </div>
+            <div class="project-info">
+                <h4>@project.ProjectName</h4>
+                <p>@project.Description</p>
+                <span class="status @project.StatusSlug">@project.StatusName</span>
+            </div>
+        </div>
+    }
+</div>

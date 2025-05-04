@@ -1,0 +1,27 @@
+﻿@using WebApp.ViewModels
+using WebApp.ViewModels;
+@using WebApp.Extensions
+
+@model ProjectViewModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<partial name="Partials/Sections/_AddProjectForm" model="Model.AddProjectFormData" />
+<partial name="Partials/Sections/_EditProjectForm" model="Model.EditProjectFormData" />
+
+<div id="projects">
+    <header>
+        <h1>@ViewData["Title"]</h1>
+        <button type="button" data-modal="true" data-target="#addProjectModal" class="btn btn-add btn-blue">Add Project</button>
+    </header>
+
+@*     <div class="project-list">
+        <partial name="Partials/Sections/_ProjectList" model="Model.Projects" />
+    </div> *@
+
+@*     <div class="project-list">
+        @await Html.PartialAsync("Partials/Sections/_ProjectList",
+                 Model.Projects.Select(p => p.ToCardViewModel()))
+    </div> *@
+</div>

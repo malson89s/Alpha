@@ -1,0 +1,20 @@
+﻿@* Fil: _NavLinks.cshtml *@
+
+<nav class="nav-links">
+    <a class="nav-link @(Context.Request.Path == "/" ? "active" : "")" asp-action="Index" asp-controller="Admin">
+        <i class="fa-duotone fa-solid fa-chart-tree-map"></i>
+        <span>Dashboard</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/projects" ? "active" : "")" asp-action="Index" asp-controller="Projects">
+        <i class="fa-duotone fa-solid fa-briefcase"></i>
+        <span>Projects</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/members" ? "active" : "")" asp-action="Index" asp-controller="Members">
+        <i class="fa-duotone fa-solid fa-users"></i>
+        <span>Team Members</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/clients" ? "active" : "")" asp-action="Index" asp-controller="Clients">
+        <i class="fa-duotone fa-solid fa-handshake"></i>
+        <span>Clients</span>
+    </a>
+</nav>
