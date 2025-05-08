@@ -35,4 +35,8 @@ public class MemberSignUpForm
     [Display(Name = "Confirm Password", Prompt = "Confirm password")]
 
     public string ConfirmPassword { get; set; } = null!;
+
+    [Required(ErrorMessage = "You must accept the terms.")]
+    public bool AcceptTerms { get; set; }
+
 }

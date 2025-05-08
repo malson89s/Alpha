@@ -8,7 +8,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure the DbContext
-builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("AlphaDB")));
+builder.Services.AddDbContext<DataContext>(x =>
+  x.UseSqlServer(builder.Configuration.GetConnectionString("AlphaDB")));
 
 // Repositories
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
