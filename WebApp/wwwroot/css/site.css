@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+Ôªø@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 /* variable scheme */
@@ -40,11 +40,11 @@
     --border-100: #EBEEF2;
     --border-200: #E3E5E8;
     --border-300: #C6C8CC;
-    --yellow-light: #ffdd57; /* kolla upp tog bara en f‰rg */
+    --yellow-light: #ffdd57; /* kolla upp tog bara en f√§rg */
     --yellow-dark: #FCBB42;
     --orange: #FF9640;
     --orange-dark: #F09330;
-    --red-light: #ffB8A5; /* kolla upp tog bara en f‰rg */
+    --red-light: #ffB8A5; /* kolla upp tog bara en f√§rg */
     --red-dark: #E94D3F;
     --green-light: #A0E650;
     --green: #31D482;
@@ -56,7 +56,6 @@
     --blue-dark: #2D7DCC;
     --purple: #826AF9;
     --purple-dark: #634CD4;
-
     /* text */
     --text-color: var(--dark-400);
     --text-muted-color: var(--grey-800);
@@ -64,14 +63,12 @@
     --text-headline-color: var(--dark-100);
     --headline-color: var(--dark-100);
     --box-shadow: 0 5px 5px 1px rgba(0,0,0, 0.05);
-
     --border-color: var(--grey-500);
     --border-focus-color: var(--blue-accent);
     --background-color: var(--white-200);
     --content-background-color: var(--white-100);
     --sidebar-background-color: var(--white-100);
     --divider-background-color: var(--white-100);
-
     /* button */
     --btn-blue-text-color: var(--white-100);
     --btn-blue-border-color: var(--white-100);
@@ -86,15 +83,13 @@
     --btn-grey-border-hover-color: var(--grey-100);
     --btn-grey-background-hover-color: var(--grey-100);
     --surface-color: var(--white-100);
-
     --btn-external-background-color: var(--white-200);
     --btn-external-border-color: var(--white-200);
     --btn-external-text-color: var(--dark-400);
     --btn-external-hover-background-color: var(--blue-accent);
     --btn-external-hover-border-color: var(--blue-accent-10);
     --btn-external-hover-text-color: var(--dark-400);
-
-     /* links */
+    /* links */
     --link-color: var(--blue-accent);
     --link-hover-color: var(--blue-dark);
     --navlink-text-color: var(--dark-200);
@@ -103,36 +98,28 @@
     --navlink-background-color: transparent;
     --navlink-background-hover-color: var(--blue-accent-10);
     --navlink-background-active-color: var(--blue-accent-10);
-
-
     --table-header-background-color: var(--white-200);
     --table-header-text-color: var(--grey-800);
     --table-tbody-tr-background-hover-color: var(--blue-accent-10);
-
     /* form */
     --form-text-color: var(--dark-400);
     --form-border-color: var(--white-100);
     --form-background-color: var(--white-100);
     --form-label-color: var(--dark-200);
-
     /* form -label */
     --form-label-color: var(--dark-400);
-
-
     /* form - input*/
     --form-input-text-color: var(--dark-200);
     --form-input-placeholder-color: var(--grey-600);
     --form-input-background-color: var(--white-100);
     --form-input-border-color: var(--grey-400);
     --form-input-border-focus-color: var(--blue-accent-10);
-
     /* form - search input*/
     --form-search-input-text-color: var(--dark-400);
     --form-search-input-placeholder-color: var(--grey-600);
     --form-search-input-border-focus-color: var(--blue-accent-10);
     --form-search-input-background-color: var(--transparent);
     --form-search-input-border-focus-color: var(--transparent);
-
     /* form - input - error */
     --form-error-input-text-color: var(--dark-200);
     --form-error-input-background-color: var(--white-100);
@@ -141,24 +128,18 @@
     --form-error-message-text-color: var(--red-dark);
     --form-error-message-background-color: var(--red-light);
     --form-error-message-border-color: var(--red-light);
-
     /* alert */
     --alert-notification-text-color: var(--blue-dark);
-    --alert-notification-background-color: var(--blue-accent-10); /* kanske fÂr kolla upp */
-
+    --alert-notification-background-color: var(--blue-accent-10); /* kanske f√•r kolla upp */
     /* alert success */
     --alert-notification-success-text-color: var(--green-dark);
     --alert-notification-success-background-color: var(--green-light);
-
     /* alert - warning */
     --alert-notification-warning-text-color: var(--yellow-dark);
     --alert-notification-warning-background-color: var(--yellow-light);
-
     /* alert - error */
-     --alert-notification-error-text-color: var(--red-dark);
+    --alert-notification-error-text-color: var(--red-dark);
     --alert-notification-background-color-notification-error-text-color: var(--red-light);
-   
-
     --error-background-color: var(--red-light); /* kolla upp*/
     --error-text-color: var(--red-dark); /* kolla upp*/
     --error-border-color: var(--red-semilight); /* kolla upp*/
@@ -174,6 +155,11 @@
     --card-border-color: var(--white-100);
     --card-background-color: var(--white-100);
 
+    /* dropdown */
+    --dropdown-text-color: var(--dark-400);
+    --dropdown-border-color: var(--white-100);
+    --dropdown-background-color: var(--white-100);
+
     /* account */
     --account-info-background-color: var(--dark-300);
     --account-info-text-color: var(--white-200);
@@ -181,7 +167,6 @@
     --account-option-background-color: var(--transparent);
     --account-option-background-hover-color: var(--blue-accent-10);
     --account-option-text-hover-color: var(--white-200);
-
     /* user-notification*/
     --user-notification-text-color: var(--dark-400);
     --user-notification-background-color: transparent;
@@ -190,7 +175,6 @@
     --user-notification-number-background-color: var(--red-dark);
     --user-notification-number-text-color: var(--white-100);
     --user-notification-text-muted-color: var(--grey-600);
-
 }
 
 
@@ -322,8 +306,8 @@ section > header {
         padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
-        gap: 1rem;
         align-items: center;
+
     }
 
     .portal > .main {
@@ -353,7 +337,97 @@ section > header {
     }
 
 
-    /* Ej klar h‰r */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.top-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-settings,
+.btn-notification,
+.btn-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.account-container {
+    position: relative;
+}
+
+#account-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    z-index: 1000;
+}
+
+
+.top .search-form {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    flex: 1;
+
+
+}
+
+.form-search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--white-100);
+/*    border: 1px solid var(--border-color);*/
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    max-width: 3fr;
+}
+
+.form-search-wrapper i {
+    font-size: 1rem;
+    color: var(--form-input-placeholder-color);
+}
+
+.form-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--form-input-text-color);
+    font-family: var(--font-standard);
+    padding: 0; /* inga extra padding */
+    display: block; /* ‚Üê viktig! */
+
+
+}
+    .form-search-input::placeholder {
+        color: var(--form-input-placeholder-color);
+
+    }
+
+
+    /* Ej klar h√§r */
 /*.top .top-actions {
     display: none;
     align-items: center;
@@ -439,7 +513,7 @@ h6 {
 }
 
 /* dividers */
-/* hj‰lp av chat gpt */
+/* hj√§lp av chat gpt */
 .or-divider {
     display: flex;
     align-items: center;
@@ -470,7 +544,7 @@ h6 {
         color: var(--accent-dark);
     }
 
-    /* hj‰lp av chat gpt */
+    /* hj√§lp av chat gpt */
 
 
 
@@ -631,17 +705,40 @@ h6 {
     }
 
 .btn-notification {
-    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    position: relative;
+    font-size: 1.4em;
     background-color: var(--btn-notification-background-color);
     border: 1px solid var(--btn-notification-border-color);
     color: var(--btn-notification-text-color);
-    font-size: 1.5em;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    z-index: 0;
+    height: 40px;
 }
-.google-icon {
+
+    .btn-notification .dot {
+        position: absolute;
+        top: 0;
+        right: 3px;
+        font-size: 0.5em;
+        color: red;
+        z-index: 1;
+    }
+
+.dot-red {
+    background-color: red;
+}
+    .google-icon {
     width: 20px;
     height: 20px;
     justify-self: start;
 }
+
+    #notification-container {
+        position: relative;
+
+
+    }
+
 
 
 
@@ -693,7 +790,7 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
-    /* row ska alltid se ut sÂh‰r pÂ alla tblrows  */
+    /* row ska alltid se ut s√•h√§r p√• alla tblrows  */
     table tr {
         display: grid;
         align-items: center;
@@ -793,7 +890,7 @@ form {
         right: 0.18rem;
         top: 3px;
         font-size: 0.8em;
-        background-color: var(--error-background-color); /* kolla upp f‰rgen*/
+        background-color: var(--error-background-color); /* kolla upp f√§rgen*/
         color: var(--error-text-color);
         padding: 0.4rem 1rem;
         border-radius: 14px;
@@ -802,7 +899,7 @@ form {
         align-items: center;
         gap: 0.5rem;
     }
-     /* tog bort table framfˆr input*/
+     /* tog bort table framf√∂r input*/
      input[type="checkbox"] {
         height: 15px;
         width: 15px;
@@ -971,7 +1068,7 @@ form {
         background-color: #e6f4ea !important;
         color: #2e7d32 !important;
     }
-    /* hj‰lp av chatgpt och la till badge uppe vid statuses (badge.warning etc)*/
+    /* hj√§lp av chatgpt och la till badge uppe vid statuses (badge.warning etc)*/
 
     /* image-previewer */
 
@@ -989,7 +1086,7 @@ form {
     }
 
         .image-previewer::after {
-            content: '\f030'; /* icon fˆr kamera*/
+            content: '\f030'; /* icon f√∂r kamera*/
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
             background-color: var(--dark-100-60);
@@ -1019,7 +1116,7 @@ form {
 
     /* modal */
 .modal {
-    display: none; /* sÂ att det inte ploppar upp automatiskt none atr*/
+    display: none; /* s√• att det inte ploppar upp automatiskt none atr*/
     justify-content: center;
     align-items: center;
     background-color: var(--modal-screen-background-color);
@@ -1028,10 +1125,10 @@ form {
     left: 0;
     right: 0;
     bottom: 0;
-    /* s‰tt display flex om du vill att det ska synas*/
+    /* s√§tt display flex om du vill att det ska synas*/
 }
         .modal .modal-content {
-            background-color: var(--modal-background-color); /* ska vara en vit f‰rg*/
+            background-color: var(--modal-background-color); /* ska vara en vit f√§rg*/
             border-radius: 16px;
             box-shadow: 0 4px 4px 3px rgba(196, 196, 196, 0.1);
             padding: 2rem;
@@ -1112,6 +1209,23 @@ a {
 
 /* sections */
 
+#account-container {
+    position: relative;
+}
+
+    #account-container .dropdown {
+        min-width: 250px;
+    }
+
+    #account-container .account-name img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--account-name-border-color);
+    }
+
+
+
+
 /* hade kunnat heta team bara */
 #team-members{
     display: grid;
@@ -1153,6 +1267,7 @@ a {
 }
 
 .card {
+    position: relative;
     color: var(--card-text-color);
     border: 1px solid var(--card-border-color);
     background-color: var(--card-background-color);
@@ -1160,6 +1275,87 @@ a {
     padding: 2rem;
     border-radius: 14px; 
 }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card-body {
+    margin: 0 2rem;
+}
+
+.card-footer {
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+/* notification center dropdown meny*/
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: var(--dropdown-background-color);
+    border: 1px solid var(--dropdown-border-color);
+    color: var(--dropdown-text-color);
+    padding: 1.2rem 1rem 1.2rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.dropdown-body {
+
+}
+
+.dropdown-footer {
+
+}
+
+
+.dropdown-action {
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: var(--navlink-background-color);
+    border: 1px solid var(--navlink-border-color);
+    color: var(--navlink-text-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 1em;
+    font-family: var(--font-standard);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+    .dropdown-action:hover {
+        background-color: var(--navlink-background-hover-color);
+        border-color: var(--navlink-border-hover-color);
+        color: var(--navlink-text-hover-color);
+        text-decoration: none;
+    }
+
+    .dropdown-action.active {
+        background-color: var(--navlink-background-active-color);
+        border-color: var(--navlink-border-active-color);
+        color: var(--navlink-text-active-color);
+        text-decoration: none;
+    }
 
 #addMemberModal .modal-content {
     width: 550px;
@@ -1224,6 +1420,17 @@ label {
     #signup h1 {
         margin-bottom: 1rem;
     }
+
+
+#notification-container {
+    position: relative;
+}
+
+#account-container {
+    position: relative;
+}
+
+
 
 
 /* views/pages */
@@ -1332,4 +1539,6 @@ label {
         background-color: #fee2e2;
         color: #991b1b;
     }
+
+
 
