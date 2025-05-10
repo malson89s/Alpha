@@ -1357,6 +1357,76 @@ a {
         text-decoration: none;
     }
 
+/* Notification container styling */
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+#notification-dropdown {
+    position: absolute;
+    top: 60px; /* justera efter behov */
+    right: 60px; /* eller justera om du vill ha den precis vid klockan */
+    z-index: 100;
+    min-width: 350px;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: var(--box-shadow);
+}
+
+    .notification img {
+        height: 56px;
+        width: 56px;
+        border: 2px solid var(--account-name-image-border-color);
+    }
+
+.user-image {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--account-name-image-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+image {
+    width: 56px;
+    height: 56px;
+
+}
+
+.project-image {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    border: 2px solid var(--account-name-image-border-color);
+}
+
+.notification .message {
+    font-weight: 600;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.notification .time {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+}
+
+.notification .btn-close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--gray-400);
+}
+/* Notification container styling end */
+
 #addMemberModal .modal-content {
     width: 550px;
 }
