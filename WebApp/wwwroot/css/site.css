@@ -151,6 +151,7 @@
     --modal-screen-background-color: var(--dark-100-a);
     /*    --modal-screen-background-color: rgba(255, 255, 255, 0.3);*/
 
+
     --card-text-color: var(--dark-400);
     --card-border-color: var(--white-100);
     --card-background-color: var(--white-100);
@@ -161,6 +162,10 @@
     --dropdown-background-color: var(--white-100);
 
     /* account */
+
+    --accout-name-text-color: var(--white-200);
+    --account-name-border-color: var(--white-200);
+    --account-name-background-color: var(--white-200);
     --account-info-background-color: var(--dark-300);
     --account-info-text-color: var(--white-200);
     --account-option-text-color: var(--white-200);
@@ -289,7 +294,6 @@ section > header {
         grid-area: logo;
         border-right: 1px solid var(--border-color);
         padding: 1rem 2rem;
-        /* border: 1px solid #E94D3F; */
     }
 
     .portal > .side {
@@ -323,7 +327,7 @@ section > header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    max-width: 800px;
+    max-width: 1000px;
     flex: 1;
 }
 
@@ -331,9 +335,8 @@ section > header {
    
         padding: 0.5rem 1rem;
         font-size: 0.95rem;
-        border: 1px solid var(--border-color);
         border-radius: 10px;
-        background-color: var(--white-100);
+        background-color: var(--background-color);
     }
 
 
@@ -365,9 +368,12 @@ section > header {
     padding: 0;
 }
 
-.account-container {
+#account-container {
     position: relative;
 }
+
+
+
 
 #account-dropdown {
     position: absolute;
@@ -379,7 +385,32 @@ section > header {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     width: 220px;
     z-index: 1000;
+    min-width: 250px;
+
 }
+.dropdown-header {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+
+
+}
+
+.account-name {
+    color: var(--account-name-text-color);
+    border: 2px solid var(--account-name-border-color);
+    background-color: var(--account-name-background-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 2px auto 1px -20px;
+}
+
+
+
 
 
 .top .search-form {
@@ -396,7 +427,6 @@ section > header {
     align-items: center;
     gap: 0.75rem;
     background-color: var(--white-100);
-/*    border: 1px solid var(--border-color);*/
     border-radius: 10px;
     padding: 0.8rem 1rem;
     width: 100%;
@@ -416,8 +446,8 @@ section > header {
     background: transparent;
     color: var(--form-input-text-color);
     font-family: var(--font-standard);
-    padding: 0; /* inga extra padding */
-    display: block; /* ← viktig! */
+    padding: 0; 
+    display: block;
 
 
 }
@@ -713,16 +743,19 @@ h6 {
     transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     z-index: 0;
     height: 40px;
+    cursor: pointer;
 }
 
-    .btn-notification .dot {
-        position: absolute;
-        top: 0;
-        right: 3px;
-        font-size: 0.5em;
-        color: red;
-        z-index: 1;
-    }
+.dot {
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
 
 .dot-red {
     background-color: red;
@@ -738,6 +771,13 @@ h6 {
 
 
     }
+
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1rem 0;
+    width: 95%;
+}
 
 
 
@@ -1092,7 +1132,7 @@ form {
             background-color: var(--dark-100-60);
             color: var(--white-100);
             padding: 1rem;
-            border-radius: 50%;
+            border-radius: 60%;
             position: relative;
             bottom: 0;
 
@@ -1116,7 +1156,7 @@ form {
 
     /* modal */
 .modal {
-    display: none; /* så att det inte ploppar upp automatiskt none atr*/
+    display: none; 
     justify-content: center;
     align-items: center;
     background-color: var(--modal-screen-background-color);
@@ -1132,6 +1172,8 @@ form {
             border-radius: 16px;
             box-shadow: 0 4px 4px 3px rgba(196, 196, 196, 0.1);
             padding: 2rem;
+            justify-content: center;
+            
         }
 
         .modal .modal-content .modal-header {
@@ -1326,8 +1368,18 @@ a {
 
 }
 
+.divider {
+    margin: 1rem 0;
+}
 
-.dropdown-action {
+.dropdown-options {
+    .dropdown-option {
+
+                     }
+}
+
+
+.dropdown-actions {
     transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     background-color: var(--navlink-background-color);
     border: 1px solid var(--navlink-border-color);
@@ -1358,7 +1410,7 @@ a {
     }
 
 /* Notification container styling */
-.notification {
+.notification-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -1398,9 +1450,12 @@ image {
     height: 56px;
 
 }
+.message {
+    grid-area: message;
+}
 
 .project-image {
-    border-radius: var(--border-radius);
+    border-radius: 50%;
     overflow: hidden;
     width: 56px;
     height: 56px;
@@ -1494,18 +1549,15 @@ label {
 
 #notification-container {
     position: relative;
+
+
 }
 
-#account-container {
-    position: relative;
-}
 
 
+    /* views/pages */
 
-
-/* views/pages */
-
-.project-cards {
+    .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
@@ -1579,7 +1631,7 @@ label {
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 60%;
 }
 
 .project-info h4 {

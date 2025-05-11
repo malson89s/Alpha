@@ -1,8 +1,4 @@
-﻿@using WebApp.ViewModels
-using WebApp.ViewModels;
-@using WebApp.Extensions
-
-@model ProjectViewModel
+﻿
 @{
     ViewData["Title"] = "Projects";
 }
@@ -15,6 +11,48 @@ using WebApp.ViewModels;
         <h1>@ViewData["Title"]</h1>
         <button type="button" data-modal="true" data-target="#addProjectModal" class="btn btn-add btn-blue">Add Project</button>
     </header>
+
+    <section class="project-list">
+        <div class="project card">
+            <div class="card-header">
+                <div class="project-image">
+                    <img src="images/projects/project-template-purple.svg" alt="template project" />
+                </div>
+                <span class="project-name">pilot project</span>
+                <span class="client-name">Företag AB</span>
+                <div id="project-actions-container">
+                    <button type="button" data-type="dropdown" data-target="#project-dropdown" class="btn-actions">
+                        <i class="fa-duotone fa-solid fa-ellipsis"></i>
+                    </button>
+
+                    <div id="project-dropdown" class="dropdown">
+                        <div class="dropdown-body">
+                            <nav class="dropdown-actions">
+                                <a class="dropdown-action" href="#">
+                                    <i class="fa-duotone fa-solid fa-pen-to-square"></i>
+                                    <span>Edit</span>
+                                </a>
+                                <divider></divider>
+                                <a class="dropdown-action" href="#">
+                                    <i class="fa-duotone fa-solid fa-user-plus" style="--fa-primary-opacity: 0.4; --fa-secondary-opacity: 1;"></i>
+                                    <span>Add Member</span>
+                                </a>
+                            </nav>
+
+                            <div class="divider"></div>
+
+                            <nav class="dropdown-actions">
+                                <a class="dropdown-action" href="#">
+                                    <i class="fa-duotone fa-solid fa-trash"></i>
+                                    <span>Delete Project</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @*     <div class="project-list">
         <partial name="Partials/Sections/_ProjectList" model="Model.Projects" />

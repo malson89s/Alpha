@@ -14,6 +14,7 @@ public interface IMemberService
     Task<ServiceResult<IEnumerable<Member>>> GetMembersAsync();
     Task<ServiceResult<bool>> AddMemberToRole(string memberId, string roleName);
     Task<ServiceResult<bool>> CreateMemberAsync(SignUpFormData formData, string roleName = "Member");
+    //Task<IEnumerable<global::WebApp.ViewModels.ProjectCardViewModel>> GetProjectCardsAsync();
 }
 
 public class MemberService(IMemberRepository memberRepository, UserManager<MemberEntity> memberManager, RoleManager<IdentityRole> roleManager) : IMemberService
